@@ -1,8 +1,10 @@
 #include "tries.h"
 
+
 Trie::Trie(){
     root = new TrieNode();
 }
+
 
 void Trie::insertWord(string word){
     TrieNode* currNode = root;

@@ -1,9 +1,6 @@
 /*
-Tries that can store word count of only small alphabets
+Tries that can store words of only small alphabets
 */
-
-#include <iostream>
-using namespace std;
 
 #include "tries.h"
 
@@ -14,6 +11,7 @@ int main(){
     vector<string> words = { "cat", "car", "cart", "ball", "bat", "bats"};
     for(string word: words)
         oTrie.insertWord(word);
+
 
     string word = "car";
     oTrie.searchWord(word) ? printf("\n Word %s is present.", word.c_str()) : printf("\n Word %s is not present.", word.c_str());
@@ -33,7 +31,7 @@ int main(){
     oTrie.searchWord(word) ? printf("\n Word %s is present.", word.c_str()) : printf("\n Word %s is not present.", word.c_str()); 
     word = "car";
     oTrie.searchWord(word) ? printf("\n Word %s is present.", word.c_str()) : printf("\n Word %s is not present.", word.c_str()); 
-    
+   
     cout << endl << endl;
     return 0;
 }
